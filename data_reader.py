@@ -63,7 +63,7 @@ class DataReader(CalibrationDataReader):
             calibration_image_folder, height, width, size_limit=0, model_path = model_path
         )
         self.input_name = session.get_inputs()[0].name
-        self.shape_nam = None
+        self.shape_name = None
         if "yolov3" in model_path:
             self.shape_name = session.get_inputs()[1].name
             self.width = width
